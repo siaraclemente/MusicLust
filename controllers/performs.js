@@ -1,4 +1,5 @@
 var Perform = require('../models/perform');
+var moment = require('moment');
 
 module.exports = {
     index,
@@ -9,6 +10,7 @@ module.exports = {
 
 function index(req, res) {
     Perform.find({}, function(err, performs) {
+        console.log(performs);
       res.render('performs/index', { performs });
     });
  }

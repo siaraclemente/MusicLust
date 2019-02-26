@@ -20,29 +20,34 @@
       </thead>
       <tbody>
           <% if (performs.length > 0) { %>
-          <% performs.forEach(function(p) { %>
-              <tr>
-                  <td><%= p.location %></td>
-                  <td><%= p.date %></td>
-                  <td><%= p.time %></td>
-              </tr>
-            <ul>
-              <form id="add-comment-form" method="POST"
-              action="/performs/comments">
-              <label>Comment:</label>
-              <textarea name="text"></textarea>
-              <input type="submit" value="Post Comment">
-            </form>
-            <% }); %>
-            <% performs.forEach(function(c) { %>
+            <% performs.forEach(function(p) { %>
                 <tr>
-                  <td><%= c.text %></td> 
-                 </tr>
+                    <td><%= p.location %></td>
+                    <td><%= p.date %></td>
+                    <td><%= p.time %></td>
+                </tr>
+                <tr>
+                    <form id="add-comment-form" method="POST"
+                    action="/performs/comments">
+                    <td>
+                    <label>Comment:</label>
+                    </td>
+                    <td><textarea name="text"></textarea>
+                    </td>
+                    <td><input type="submit" value="Post Comment">
+                    </td>
+                    </form>
+                </tr>
+                <% p.comments.forEach(function(c) { %>
+                    <tr>
+                    <td colspan="3"><%= c.text %></td> 
+                    </tr>
                 <% }); %> 
-          <% } else { %>
-         <h1> No Current Performances </h1>  
-          <% } %>
-        </ul>
+            <% }); %>
+        <% } else { %>
+            <h1> No Current Performances </h1>  
+        <% } %>
+        
       </tbody>
   </table>
   <section>
