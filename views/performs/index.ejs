@@ -5,11 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel='stylesheet' href='/stylesheets/style.css' />
-  <title>MusicLust</title>
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Maven+Pro" rel="stylesheet">
+  <title>MusicLust | Home</title>
 </head>
 <body>
+  <a href = "performs/new" class = 'Add'>Add New Performance</a>
   <h1>We're following Dashboard Confessional!</h1>
-  <a href= "performs/new" >Add New Performance</a>
   <table>
       <thead>
           <tr>
@@ -33,7 +34,7 @@
                     </form>
                     </td>
                 </tr>
-                <tr>
+                <tr> 
                     <form id="add-comment-form" method="POST"
                     action="/performs/<%= p._id %>/comments">
                     <td>
