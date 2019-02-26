@@ -27,20 +27,27 @@
                     <td><%= p.time %></td>
                 </tr>
                 <tr>
+                    <td>
+                    <form action="/performs/<%= p._id %>?_method=DELETE" method="POST" class="secondary-content">
+                    <button type="submit">Delete</button>
+                    </form>
+                    </td>
+                </tr>
+                <tr>
                     <form id="add-comment-form" method="POST"
-                    action="/performs/comments">
+                    action="/performs/<%= p._id %>/comments">
                     <td>
                     <label>Comment:</label>
                     </td>
                     <td><textarea name="text"></textarea>
                     </td>
-                    <td><input type="submit" value="Post Comment">
+                    <td><input type="submit" value="Post Comment">   
                     </td>
                     </form>
                 </tr>
-                <% p.comments.forEach(function(c) { %>
+                <% p.comments.forEach(function(c, idx) { %>
                     <tr>
-                    <td colspan="3"><%= c.text %></td> 
+                    <td colspan="3"><%= c.text %></td>
                     </tr>
                 <% }); %> 
             <% }); %>

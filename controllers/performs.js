@@ -1,10 +1,10 @@
 var Perform = require('../models/perform');
-var moment = require('moment');
 
 module.exports = {
     index,
     new: newPerforms,
-    create
+    create,
+    delete: deletePerform
 
 };
 
@@ -32,4 +32,16 @@ function create(req, res) {
     });
   }
 
+  function deletePerform(req, res, next) {
+    Perform.findByIdAndRemove(req.params.id, function(error, deletedPerforms){
+        if(error){
+            console.log(error)
+        } else {
+            console.log(deletedPerforms, 'This Show was deleted')
+            res.redirect('/performs')
+        }
+    });
+};
+
+  
 

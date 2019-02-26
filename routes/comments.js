@@ -3,9 +3,6 @@ var router = express.Router();
 var commentsCtrl = require('../controllers/comments');
 
 //POST Comments
-router.post('/performs/comments', commentsCtrl.addComment);
-
-//DELETE Comments
-//router.delete('/comments/:id', commentsCtrl.delComment);
+router.post('/performs/:id/comments', commentsCtrl.addComment);
 
 module.exports = router;
