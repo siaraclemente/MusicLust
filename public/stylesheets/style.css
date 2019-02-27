@@ -3,6 +3,35 @@ body {
   font-family: 'Libre Baskerville', serif;
   font-family: 'Maven Pro', sans-serif;
   font-size: 16px;
-  text-align: center;
   background-color: rgba(218, 227, 230);
+}
+
+hr { 
+  display: block;
+  margin-before: 0.5em;
+  margin-after: 0.5em;
+  margin-start: auto;
+  margin-end: auto;
+  overflow: hidden;
+  border-style: inset;
+  border-width: 2px;
+}
+
+.header{
+  text-align: center;
+}
+
+.newShow {
+  text-align: center;
+  color: black;
+}
+
+.newForm {
+  text-align: center;
+  color: black;
+}
+
+.band {
+  text-align: center;
+  color: black;
 }
