@@ -5,7 +5,8 @@ module.exports = {
     new: newPerforms,
     create,
     delete: deletePerform,
-    edit: editPerform
+    displayEditForm,
+    editPerform
 
 };
 
@@ -44,12 +45,18 @@ function create(req, res) {
     });
 };
 
-function editPerform(req, res) {
+function displayEditForm(req, res){
+    Perform.findById(req.params.id, function(err, foundPerformer){
+      res.render('performs/edit', {foundPerformer})
+    })
+  }
+
+  function editPerform(req, res) {
     console.log(req.params.id, "This is the Id of the performance we're updating")
     console.log(req.body, "This is updated information of the performance")
     Perform.findByIdAndUpdate(req.params.id, req.body, {new: true}, function(error, updatedPerform){
         console.log(updatedPerform, "This is the updated performance")
-        res.render('performs/edit', {updatedPerform});
+        res.redirect('/performs');
     });
 }
 

@@ -18,15 +18,5 @@ var performSchema = new mongoose.Schema({
     comments: [commentSchema]
   });
 
-var bandSchema = new mongoose.Schema({
-    name: String,
-    performs: [performSchema],
-  }, {
-    timestamps: true
-  });
-  
-
-
-
 
 module.exports = mongoose.model('Perform', performSchema);

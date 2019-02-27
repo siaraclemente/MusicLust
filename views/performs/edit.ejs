@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel='stylesheet' href='/stylesheets/style.css' />
-  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Maven+Pro" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville%7CMaven+Pro" rel="stylesheet">
   <title>MusicLust | Update Show</title>
 </head>
 <body>
     <a href= "/performs">Back</a>
-    <h1 class="newShow">Changes to a show? Fix them here!</h1><hr>
+    <h1 class="newShow">Changes to a show? Fix them here!</h1>
     <hr>
     <table>
         <thead>
@@ -21,26 +21,23 @@
             </tr>
         </thead>
         <tbody>
-            <% if (performs.length > 0) { %>
-              <% performs.forEach(function(p) { %>
                   <tr>
-                      <td><%= p.location %></td>
-                      <td><%= p.date %></td>
-                      <td><%= p.time %></td>
+                      <td><%= foundPerformer.location %></td>
+                      <td><%= foundPerformer.date %></td>
+                      <td><%= foundPerformer.time %></td>
                   </tr>
                   <tr>
-                      <td>
-                      <form action="/performs/<%= p._id %>?" method="POST" class="performsForm">
-                      <button type="submit">Edit</button>
-                      </form>
-                      </td>
-    <label>Location:</label>
-    <input type="text" name="location">
-    <label>Date:</label>
-    <input type="date" name="date">
-    <label>Time</label>
-    <input type="time" name="time">
-    <input type="submit" value="Update Show">
-  </form>
+                <td>           
+
+    <form action="/performs/<%= foundPerformer._id %>?_method=PUT" method="POST" class="performsForm">
+        <label>Location:</label>
+        <input type="text" name="location" value="<%= foundPerformer.location%>">
+        <label>Date:</label>
+        <input type="date" name="date" value="<%= foundPerformer.date %>">
+        <label>Time</label>
+        <input type="time" name="time" value="<%= foundPerformer.time %>">
+        <input type="submit" value="Update Show">
+    </form>
+  
   </body>
   </html>

@@ -9,8 +9,11 @@
   <title>MusicLust | Home</title>
 </head>
 <body>
-  <a href= "https://www.dashboardconfessional.com/" class = 'band'>Learn More About Them Here</a><br> 
+<ul>
+  <a href="/logout"><i class="material-icons left"></i>Log Out</a><br>
+  <a href= "https://www.dashboardconfessional.com/" class = 'band'>Learn More About Them Here</a> <br>
   <a href = "performs/new" class = 'Add'>Add New Performance</a>
+</ul>  
   <h1 class="header">We're following Dashboard Confessional!</h1>
   <hr>
   <table>
@@ -31,9 +34,7 @@
                 </tr>
                 <tr>
                     <td>
-                    <form action="/performs/<%= p._id %>?" method="POST" class="performsForm">
-                    <button type="submit">Edit</button>
-                    </form>
+                    <a href="/performs/<%= p._id %>">Edit</a>
                     </td>
                     <td>
                     <form action="/performs/<%= p._id %>?_method=DELETE" method="POST" class="performsForm">
