@@ -4,7 +4,8 @@ module.exports = {
     index,
     new: newPerforms,
     create,
-    delete: deletePerform
+    delete: deletePerform,
+    edit: editPerform
 
 };
 
@@ -37,11 +38,21 @@ function create(req, res) {
         if(error){
             console.log(error)
         } else {
-            console.log(deletedPerforms, 'This Show was deleted')
-            res.redirect('/performs')
+        console.log(deletedPerforms, 'This Show was deleted')
+        res.redirect('/performs')
         }
     });
 };
+
+function editPerform(req, res) {
+    console.log(req.params.id, "This is the Id of the performance we're updating")
+    console.log(req.body, "This is updated information of the performance")
+    Perform.findByIdAndUpdate(req.params.id, req.body, {new: true}, function(error, updatedPerform){
+        console.log(updatedPerform, "This is the updated performance")
+        res.render('performs/edit', {updatedPerform});
+    });
+}
+
 
   
 

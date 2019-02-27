@@ -31,6 +31,11 @@
                 </tr>
                 <tr>
                     <td>
+                    <form action="/performs/<%= p._id %>?" method="POST" class="performsForm">
+                    <button type="submit">Edit</button>
+                    </form>
+                    </td>
+                    <td>
                     <form action="/performs/<%= p._id %>?_method=DELETE" method="POST" class="performsForm">
                     <button type="submit">Delete</button>
                     </form>
@@ -45,8 +50,6 @@
                     <td><textarea name="text"></textarea>
                     </td>
                     <td><input type="submit" value="Post Comment">   
-                    </td>
-                    <td><input type="submit" value="Edit Comment">   
                     </td>
                     </form>
                 </tr>
