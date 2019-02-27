@@ -25,19 +25,21 @@
                       <td><%= foundPerformer.location %></td>
                       <td><%= foundPerformer.date %></td>
                       <td><%= foundPerformer.time %></td>
-                  </tr>
-                  <tr>
-                <td>           
-
-    <form action="/performs/<%= foundPerformer._id %>?_method=PUT" method="POST" class="performsForm">
-        <label>Location:</label>
-        <input type="text" name="location" value="<%= foundPerformer.location%>">
-        <label>Date:</label>
-        <input type="date" name="date" value="<%= foundPerformer.date %>">
-        <label>Time</label>
-        <input type="time" name="time" value="<%= foundPerformer.time %>">
-        <input type="submit" value="Update Show">
-    </form>
+                 </tr>     
+        </tbody>
+<tbody>
+    <tr> 
+            <form action="/performs/<%= foundPerformer._id %>?_method=PUT" method="POST" class="performsForm">
+            <td><label>Location:</label></td>
+            <td><input type="text" name="location" value="<%= foundPerformer.location%>"></td>
+            <td><label>Date:</label></td>
+            <td><input type="date" name="date" value="<%= foundPerformer.date %>"></td>
+            <td><label>Time:</label></td>
+            <td><input type="time" name="time" value="<%= foundPerformer.time %>"></td>
+            <td><input type="submit" value="Update Show"></td>
+            </form>  
+    </tr>
+</tbody>
   
   </body>
   </html>
