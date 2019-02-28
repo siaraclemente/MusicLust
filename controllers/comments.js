@@ -19,5 +19,3 @@ function addComment(req, res) {
       res.redirect('/')
     }
 }
-
-//but why tho
