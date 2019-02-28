@@ -19,3 +19,5 @@ function addComment(req, res) {
       res.redirect('Send them somewhere else')
     }
 }
+
+//but why tho
