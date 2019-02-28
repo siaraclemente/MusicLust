@@ -1,4 +1,4 @@
-const User = require('../models/user');
+const User = require('../models/users');
 
 module.exports = {
   createComment
@@ -7,6 +7,7 @@ module.exports = {
 function createComment(req, res, next) {
     req.user.facts.push(req.body);
     req.user.save(function(err) {
-      res.redirect('/users');
+      res.redirect('/performs');
     });
   }
+

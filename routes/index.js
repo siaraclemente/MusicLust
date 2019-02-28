@@ -17,7 +17,7 @@ router.get('/auth/google', passport.authenticate(
 
  router.get('/logout', function(req, res){
    req.logout();
-   res.redirect('/performs');
+   res.redirect('/');
  });
 
 /* GET home page. */
