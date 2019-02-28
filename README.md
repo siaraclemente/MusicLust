@@ -1,8 +1,8 @@
 # MusicLust
+![MusicLust Home Page](screenshot1proj2.jpg)
 
-[My Trello](https://trello.com/b/MKQEjzHd/musiclus)
-
-### I Made This: https://git.heroku.com/musiclust.git
+### I Made This: 
+[Check it out here!](https://git.heroku.com/musiclust.git)
 
 ### What is It?: 
 An app that allows you to follow your favorite band while on tour! Providing you with updates of any last minute shows/changes, this way you don't miss a beat!
@@ -27,6 +27,9 @@ Currently, this site is specifically for those like myself, who follow Dashboard
 * Embedding comments. It was rather difficult to find a way to Edit/Delete comments individually. 
 * Google OAuth did not work properly the first time around, and had to be redone. 
 * Completely changed my idea on the second day of work, thus starting over:
+
+### My Plan:
+[My Trello](https://trello.com/b/MKQEjzHd/musiclus)
 
 ### Initial Idea:
 ![Initial Project Idea](Project2WF1.jpg)
