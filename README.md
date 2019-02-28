@@ -1,5 +1,5 @@
 # MusicLust
-![MusicLust Home Page](screenshot1proj2.jpg)
+![MusicLust Home Page](https://github.com/siaraclemente/MusicLust/blob/master/public/images/screenshot1proj2.jpg)
 
 ### I Made This: 
 [Check it out here!](https://git.heroku.com/musiclust.git)
@@ -26,16 +26,16 @@ Currently, this site is specifically for those like myself, who follow Dashboard
 ### Issues I Ran Into:
 * Embedding comments. It was rather difficult to find a way to Edit/Delete comments individually. 
 * Google OAuth did not work properly the first time around, and had to be redone. 
-* Completely changed my idea on the second day of work, thus starting over:
+* Completely changed my idea on the second day of work, thus starting over.
+
+### Initial Idea:
+![Initial Project Idea](https://github.com/siaraclemente/MusicLust/blob/master/public/images/project2wireframe2.jpg)
+
+### New and Improved Idea:
+![New and Improved Idea](https://github.com/siaraclemente/MusicLust/blob/master/public/images/updatedwfproj2.jpg)
 
 ### My Plan:
 [My Trello](https://trello.com/b/MKQEjzHd/musiclus)
-
-### Initial Idea:
-![Initial Project Idea](Project2WF1.jpg)
-
-### New and Improved Idea:
-![New and Improved Idea](updatedwfproj2.jpg)
 
 ### Future Plans:
 * Add a detailed page of the band, to find out more information, if user is new to their music.
