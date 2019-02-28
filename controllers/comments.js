@@ -16,7 +16,7 @@ function addComment(req, res) {
     });
     } else {
       // otherwise we can send them somewhere else
-      res.redirect('Send them somewhere else')
+      res.redirect('/')
     }
 }
 
