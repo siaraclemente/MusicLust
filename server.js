@@ -8,16 +8,21 @@ var passport = require('passport');
 
 var methodOverride = require('method-override');
 
-var indexRouter = require('./routes/index');
-var performsRouter = require('./routes/performs');
-var commentsRouter = require('./routes/comments');
+// load the env vars
+require('dotenv').config();
 
+// create the Express app
 var app = express();
-
 
 // connect to the database with Mongoose
 require('./config/database');
-require('dotenv').config();
+// configure Passport
+require('./config/passport');
+
+// require our routes
+var indexRouter = require('./routes/index');
+var performsRouter = require('./routes/performs');
+var commentsRouter = require('./routes/comments');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
