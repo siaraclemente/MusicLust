@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/musiclust',
+mongoose.connect(process.env.DATABASE_UR || 'mongodb://localhost/musiclust',
 {useNewUrlParser: true}
 );
 
