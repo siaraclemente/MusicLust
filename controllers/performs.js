@@ -59,7 +59,3 @@ function displayEditForm(req, res){
         res.redirect('/performs');
     });
 }
-
-
-  
-

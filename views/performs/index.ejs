@@ -54,11 +54,15 @@
                     </td>
                     </form>
                 </tr>
-                <% p.comments.forEach(function(c, idx) { %>
-                    <tr>
-                    <td colspan="3"><%= c.text %></td>
-                    </tr>
-                <% }); %> 
+                <% if (p.comments.length >0) { %>
+                    <% p.comments.forEach(function(c) { %>
+                        <tr>
+                            <% if(c) { %>
+                                <td colspan="3"><%= c.text %></td>
+                            <% } %>
+                        </tr>
+                    <% }); %> 
+                <% } %>
             <% }); %>
         <% } else { %>
             <h1> No Current Performances </h1>  
