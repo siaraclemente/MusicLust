@@ -2,7 +2,7 @@
 ![MusicLust Home Page](https://github.com/siaraclemente/MusicLust/blob/master/public/images/screenshot1proj2.jpg)
 
 ### I Made This: 
-Check it out here!(https://musiclust.herokuapp.com/)
+[Check it out here!](https://musiclust.herokuapp.com/)
 
 ### What is It?: 
 An app that allows you to follow your favorite band while on tour! Providing you with updates of any last minute shows/changes, this way you don't miss a beat!
