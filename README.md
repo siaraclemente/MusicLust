@@ -1,9 +1,8 @@
 # MusicLust
 
-[The Plan:](https://trello.com/b/MKQEjzHd/musiclus)
+[My Trello](https://trello.com/b/MKQEjzHd/musiclus)
 
-### I Made This: 
-https://git.heroku.com/musiclust.git
+### I Made This: https://git.heroku.com/musiclust.git
 
 ### What is It?: 
 An app that allows you to follow your favorite band while on tour! Providing you with updates of any last minute shows/changes, this way you don't miss a beat!
