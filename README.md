@@ -14,18 +14,20 @@ One stop shop to know exactly where all your favorite artists are performing. Ma
 People who live, eat, and breathe music entertainment! Festival lovers, who love to see their favorite artists not only at big venues, but even at the last minute shows they announce while in town.
 
 ### Instructions: 
-Currently, this site is specifically for those like myself, who follow Dashboard Confessional. Log In, view shows, add/update shows as needed, and comment any status updates, or changes. Even set up plans with other users while in town, it's an open forum!
+Currently, this site is specifically for those like myself, who follow Dashboard Confessional. It's completely possible to view/add/update/delete shows without logging in. However, in order to part-take in the open-forum discussions via the comments, one must sign in via Google. Make plans with others while visiting from out of town, and keep others in the loop while posting updates! 
 
 ### What It Has/What Was Used:
 * Node JS/MongoDB/Mongoose
+* Complete CRUD
 * CSS
 * Embeded YouTube Video to a Live Show
 * Google OAuth
 * Link to Their Band Website
 
 ### Issues I Ran Into:
-* Embedding comments. It was rather difficult to find a way to Edit/Delete comments individually. 
-* Google OAuth did not work properly the first time around, and had to be redone. 
+* Embedding comments. It was rather difficult to find a way to Edit/Delete comments individually, thus I simply allowed the entire show and thread to be deleted at once.
+* Google OAuth did not work properly the first time around, and had to be worked on for a bit, but the issue was resolved. 
+* Took a while to get my app up and running live on Heroku.
 * Completely changed my idea on the second day of work, thus starting over.
 
 ### Initial Idea:
@@ -38,6 +40,8 @@ Currently, this site is specifically for those like myself, who follow Dashboard
 [My Trello](https://trello.com/b/MKQEjzHd/musiclus)
 
 ### Future Plans:
+* Allow only admin-permission to delete/edit already posted shows.
+* Allow users to update and edit comments as needed.
 * Add a detailed page of the band, to find out more information, if user is new to their music.
 * Add more than one band, and have this be a go-to-site to see who is on tour and where.
 * Create a search bar, allowing users to search for their favorite artist, follow them, and see where they are performing.
