@@ -26,6 +26,8 @@ Currently, this site is specifically for those like myself, who follow Dashboard
 
 ### Issues I Ran Into:
 * Embedding comments. It was rather difficult to find a way to Edit/Delete comments individually, thus I simply allowed the entire show and thread to be deleted at once.
+* I noticed that if you are not logged in, and try to comment, then log in afterwards, it actually adds a blank comment, which needs to be deleted later.
+* Could only get show times to render in Military Time.
 * Google OAuth did not work properly the first time around, and had to be worked on for a bit, but the issue was resolved. 
 * Took a while to get my app up and running live on Heroku.
 * Due to one week deadline, initial idea had to be simplified to meet project criteria. 
