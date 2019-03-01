@@ -28,7 +28,7 @@ Currently, this site is specifically for those like myself, who follow Dashboard
 * Embedding comments. It was rather difficult to find a way to Edit/Delete comments individually, thus I simply allowed the entire show and thread to be deleted at once.
 * Google OAuth did not work properly the first time around, and had to be worked on for a bit, but the issue was resolved. 
 * Took a while to get my app up and running live on Heroku.
-* Completely changed my idea on the second day of work, thus starting over.
+* Due to one week deadline, initial idea had to be simplified to meet project criteria. 
 
 ### Initial Idea:
 ![Initial Project Idea](https://github.com/siaraclemente/MusicLust/blob/master/public/images/project2wireframe2.jpg)
