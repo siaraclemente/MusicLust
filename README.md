@@ -43,6 +43,7 @@ Currently, this site is specifically for those like myself, who follow Dashboard
 
 ### Future Plans:
 * Allow only admin-permission to delete/edit already posted shows.
+* Have shows appear in chronological order, regardless of the order they are posted in.
 * Allow users to update and edit comments as needed.
 * Add a detailed page of the band, to find out more information, if user is new to their music.
 * Add more than one band, and have this be a go-to-site to see who is on tour and where.
